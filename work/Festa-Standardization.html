@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa Shuttle Bus App Standardization</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <script type="text/javascript" src="../js/work.js"></script>
+</head>
+<style>
+#detail {background: #36254F; transition: all 0.3s ease-in-out;}
+#detail .intro {background: url(../img/02_proj/01.festa/title.jpg) no-repeat center center/cover;}
+#detail .intro .tit em {display: block; line-height: 1;}
+#detail .intro .tit .tit-sub {margin-top: 40px;}
+#detail .inner .sec.overview .tit {font-size: 32px; margin-top: 20px; margin-bottom: 30px;}
+#detail .inner .sec .tit {font-size: 150px; text-transform: uppercase;}
+#detail .inner .sec .tit span {font-size: 40px;}
+#detail .inner .sec .tit p {line-height: 1;}
+#detail .inner .sec .cont {margin-top: -3%;}
+#detail .inner .sec .cont.flex {display: flex; justify-content: space-between;}
+#detail .inner .sec .cont .col-3 {display: flex;}
+#detail .inner .sec .cont .col-3 > div {width: 33.333%;}
+#detail .inner .sec .cont .col-3.right {justify-content: flex-end;}
+#detail .inner .sec .cont .col-3 .item:nth-child(2n) {margin-top: 100px;}
+#detail .inner .sec .cont .col-3 .item .m_mockup {margin-left: 80px; margin-right: 80px;}
+#detail .inner .sec .cont .col-3 .item .m_mockup > div {position: relative; padding-bottom: 200%;}
+#detail .inner .sec .cont .col-3 .item .m_mockup > div img {width: 100%; position: absolute; left: 0; right: 0; bottom: 0; object-fit: cover;}
+#detail .inner .sec .cont .col-3 .item span {font-size: 14px; margin-left: 80px;}
+#detail .inner .sec.last {padding-bottom: 100px;}
+#detail.active {background: #fff; color: #36254F;}
+#detail.active #close span {background: #36254F;}
+@media screen and (min-width : 768px) {
+  #detail .inner .sec {padding-top: 200px;}
+}
+@media screen and (min-width : 1301px) {
+  #detail .inner .sec.overview {display: flex; justify-content: space-between;}
+  #detail .inner .sec.overview .wrap {width: 50%;}
+}
+@media screen and (max-width : 1300px) {
+  #detail .inner .sec .tit {font-size: 100px;}
+  #detail .inner .sec .cont .col-3 {display: block;}
+  #detail .inner .sec .cont .col-3 > div {width: 100%;}
+  #detail .inner .sec .cont .col-3:last-child {margin-top: 100px;}
+}
+@media screen and (max-width : 979px) {
+  
+}
+@media screen and (max-width : 767px) {
+  #detail .inner .sec {padding-top: 80px;}
+  #detail .inner .sec.last {padding-top: 80px;}
+  #detail .inner .sec .tit {font-size: 10vw;}
+}
+</style>
+<body>
+    <section id="detail" class="col-1">
+        <button id="close">
+            <span class="line1"></span>
+            <span class="line2"></span>
+        </button>
+        <!--intro-->
+        <div class="intro full-height">
+            <div class="tit en">
+            <em><span>Festa Shuttle</span> <span>Bus App</span></em>
+            <em>Standardization</em>
+            <p class="tit-sub">페스타 셔틀버스 앱 표준화</p>
+            </div>
+            <div class="info">  
+            <dl class="item">
+                <dt>Project</dt>
+                <dd>Mobile App</dd>
+            </dl>
+            <dl class="item">
+                <dt>Client</dt>
+                <dd>Wizdome</dd>
+            </dl>
+            <dl class="item">
+                <dt>Period</dt>
+                <dd>2021.08</dd>
+            </dl>
+            <dl class="item">
+                <dt>Contribution</dt>
+                <dd>Design&Publishing 100%</dd>
+            </dl>
+            </div>
+        </div>
+        <div class="inner">
+            <!--overview-->
+            <div class="sec overview">
+              <div class="blank"></div>
+              <div class="wrap">
+                <div class="tit">OVERVIEW</div>
+                <div class="cont flex"><p>위즈돔에서는 서울모터쇼, UMF, 스파르탄레이스 등 다양한 페스티벌의 셔틀버스를 예약할 수 있는 어플을 운영하고 있습니다. 매번 새로운 페스티벌이 생길때 마다 셔틀버스 예약 어플을 새롭게 만들어야해서 개발공수가 많이 들고, 시간관계상 메인만 해당 페스티벌의 룩앤필을 사용해왔기에 전체적인 디자인톤이 맞지 않는 문제점이 있었습니다. 따라서 개발 공수를 최소화한 효과적인 UI 구축으로 표준화하는 것을 이번 프로젝트에서 가장 중요한 목표로 잡았으며, <a href="https://www.figma.com/file/LwoWNwHCkElcnfpxFz3OzI/Festa-Design-System?node-id=0%3A1" target="_blank">디자인 가이드</a>를 작성하였습니다.</p></div>
+              </div>
+            </div>
+            <!--feature-->
+            <div class="sec" id="scroll-event">
+              <div class="tit">
+                <span>1.</span>
+                <p>Well - defended<br>identity</p>
+              </div>
+              <div class="cont flex">
+                <img src="../img/02_proj/01.festa/well-defended.png" alt="">
+              </div>
+            </div>
+            <div class="sec full-width">
+              <video autoplay loop muted>
+                <source src="../img/02_proj/01.festa/video.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos. Please upgrade your browser to the latest version.
+              </video>
+            </div>
+            <div class="sec last">
+              <div class="tit">
+                <span>2.</span>
+                <p>Flexible<br>Component</p>
+              </div>
+              <div class="cont">
+                <div class="col-3 right">
+                  <div class="item">
+                    <div class="m_mockup">
+                      <div class="mock_inner">
+                        <div class="m1">
+                          <img src="../img/02_proj/01.festa/02.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <span>행사장 날짜 dropdown</span>
+                  </div>
+                  <div class="item">
+                    <div class="m_mockup">
+                      <div class="mock_inner">
+                        <div class="m2">
+                          <img src="../img/02_proj/01.festa/03.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <span>행사장 날짜 캘린더 선택</span>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="item">
+                    <div class="m_mockup">
+                      <div class="mock_inner">
+                        <div class="m1">
+                          <img src="../img/02_proj/01.festa/04.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <span>버튼으로 탑승확인</span>
+                  </div>
+                  <div class="item">
+                    <div class="m_mockup">
+                      <div class="mock_inner">
+                        <div class="m2">
+                          <img src="../img/02_proj/01.festa/05.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <span>QR코드로 탑승확인</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copy">
+            <div class="title">Festa Shuttle Bus App Standardization</div>
+            <div class="desiner">©Designer Jiwoo</div>
+          </div>
+    </section>
+</body>
+</html>
