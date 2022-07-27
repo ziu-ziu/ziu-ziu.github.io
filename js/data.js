@@ -2,8 +2,8 @@ window.onload = function(){
     //sns list   
     let snsData = [
         {name: 'Instagram', link: 'https://www.instagram.com/pie.glow/'},
-        {name: 'Blog', link: 'https://www.instagram.com/pie.glow/'},
-        {name: 'Youtube', link: 'https://www.instagram.com/pie.glow/'},
+        {name: 'Blog', link: 'https://blog.naver.com/songhee3'},
+        {name: 'Youtube', link: 'https://www.youtube.com/channel/UCktjZVX7XhBzHztMiBR7znQ'},
     ];
     snsData.forEach((a,i) => {
         const temp = document.createElement('li');
@@ -13,8 +13,8 @@ window.onload = function(){
 
     //project list
     let projectMain = [
-        {title:'페스타 셔틀버스 앱 표준화', subTitle:'2022 / Mobile App', thumb:'01_festa.png', link:'./work/Festa-Standardization.html', target:'', class:'uiux main', cate:'uiux'},
-        {title:'무료디자인 리소스 사이트', subTitle:'2022 / Personal Project', thumb:'04_free.png', link:'https://pie-glow.github.io/', target:'_blank', class:'uiux', cate:'uiux'},
+        {title:'페스타 셔틀버스 앱 표준화', subTitle:'2022 / Mobile App', thumb:'01_festa.jpg', link:'./work/Festa-Standardization.html', target:'', class:'uiux main', cate:'uiux'},
+        {title:'무료디자인 리소스 사이트', subTitle:'2022 / Personal Project', thumb:'04_free.jpg', link:'https://pie-glow.github.io/', target:'_blank', class:'uiux', cate:'uiux'},
         {title:'FACTORY TALK LOGO PROPOSAL', subTitle:'2021 / Logo', thumb:'07_factallk.jpg', link:'./work/factalk.html', target:'', class:'branding main', cate:'branding'},
         {title:'The City Night', subTitle:'2021 / Artwork', thumb:'03_the_city_night.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
         {title:'Shooting star', subTitle:'2021 / Artwork', thumb:'02_shooting_star.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
