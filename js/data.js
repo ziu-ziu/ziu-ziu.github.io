@@ -13,12 +13,13 @@ window.onload = function(){
 
     //project list
     let projectMain = [
-        {title:'페스타 셔틀버스 앱 표준화', subTitle:'2022 / Mobile App', thumb:'01_festa.jpg', link:'./work/Festa-Standardization.html', target:'', class:'uiux main', cate:'uiux'},
-        {title:'무료디자인 리소스 사이트', subTitle:'2022 / Personal Project', thumb:'04_free.jpg', link:'https://pie-glow.github.io/', target:'_blank', class:'uiux', cate:'uiux'},
+        {title:'팡세 배양육 시식회 어플리케이션 디자인', subTitle:'2022 / Editorial', thumb:'11_pensees_print.jpg', link:'./work/pensees.html', target:'', class:'editorial main', cate:'editorial'},
+        // {title:'페스타 셔틀버스 앱 표준화', subTitle:'2022 / Mobile App', thumb:'01_festa.jpg', link:'./work/Festa-Standardization.html', target:'', class:'uiux main', cate:'uiux'},
+        {title:'무료디자인 리소스 사이트', subTitle:'2022 / Personal Project', thumb:'04_free.jpg', link:'https://pie-glow.github.io/', target:'_blank', class:'uiux main', cate:'uiux'},
         {title:'FACTORY TALK LOGO PROPOSAL', subTitle:'2021 / Logo', thumb:'07_factallk.jpg', link:'./work/factalk.html', target:'', class:'branding main', cate:'branding'},
         {title:'The City Night', subTitle:'2021 / Artwork', thumb:'03_the_city_night.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
         {title:'Shooting star', subTitle:'2021 / Artwork', thumb:'02_shooting_star.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
-        {title:'쉐정 2020 설 선물세트 패키지 디자인', subTitle:'2020 / Package', thumb:'10_cj20package.jpg', link:'./work/cj2020.html', target:'', class:'package main', cate:'package'},
+        {title:'쉐정 2020 설 선물세트 패키지 디자인', subTitle:'2020 / Package', thumb:'10_cj20package.jpg', link:'./work/cj2020.html', target:'', class:'package', cate:'package'},
         {title:'GGAC 레퍼토리시즌 2020', subTitle:'2019 / Website', thumb:'05_ggac.jpg', link:'https://ziu-ziu.github.io/GGAC2022/', target:'_blank', class:'uiux', cate:'uiux'},
         {title:'쉐정 2019 추석 선물세트 디자인', subTitle:'2019 / Package', thumb:'09_cj19package.jpg', link:'./work/cj2019.html', target:'', class:'package', cate:'package'},
         {title:'도시재생실증연구단 홍보 리플렛&부스', subTitle:'2015-2017 / Leaflet, Booth', thumb:'06_kourc.jpg', link:'./work/KOURC.html', target:'', class:'editorial', cate:'editorial'},
@@ -33,7 +34,7 @@ window.onload = function(){
                                 <div class="thumb" style="background:url('./img/01_thumb/${e[i].thumb}') no-repeat center center/cover"></div>
                                 <div class="title">
                                 <h4>${e[i].title}</h4>
-                                <p>${e[i].subTitle}p</p>
+                                <p>${e[i].subTitle}</p>
                                 </div>
                               </a>`
             document.getElementById('proj').append(temp);
