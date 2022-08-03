@@ -16,6 +16,7 @@ window.onload = function(){
         {title:'팡세 배양육 시식회 어플리케이션 디자인', subTitle:'2022 / Editorial', thumb:'11_pensees_print.jpg', link:'./work/pensees.html', target:'', class:'editorial main', cate:'editorial'},
         // {title:'페스타 셔틀버스 앱 표준화', subTitle:'2022 / Mobile App', thumb:'01_festa.jpg', link:'./work/Festa-Standardization.html', target:'', class:'uiux main', cate:'uiux'},
         {title:'무료디자인 리소스 사이트', subTitle:'2022 / Personal Project', thumb:'04_free.jpg', link:'https://pie-glow.github.io/', target:'_blank', class:'uiux main', cate:'uiux'},
+        {title:'미트미트 홈페이지', subTitle:'2021 / Website', thumb:'12_meatmeat.jpg', link:'https://ziu-ziu.github.io/meatmeat/', target:'_blank', class:'uiux', cate:'uiux'},
         {title:'FACTORY TALK LOGO PROPOSAL', subTitle:'2021 / Logo', thumb:'07_factallk.jpg', link:'./work/factalk.html', target:'', class:'branding main', cate:'branding'},
         {title:'The City Night', subTitle:'2021 / Artwork', thumb:'03_the_city_night.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
         {title:'Shooting star', subTitle:'2021 / Artwork', thumb:'02_shooting_star.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
