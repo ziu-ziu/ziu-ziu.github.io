@@ -118,8 +118,6 @@ window.onload = function(){
         temp.innerHTML = `<div class="bg"></div>
                           <div class="modal-wrap">
                               <div class="img"><img src="${imgUrl}" alt="${title}"></div>
-                          </div>
-                          <div class="cursor"></div>
                           </div>`
         document.getElementById('modal').append(temp);
         scrollPosition = window.pageYOffset;
