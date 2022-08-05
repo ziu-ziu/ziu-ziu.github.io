@@ -35,8 +35,8 @@ window.onload = function(){
             temp.innerHTML = `<a href="${e[i].link}" target="${e[i].target}">
                                 <div class="thumb" style="background:url('./img/01_thumb/${e[i].thumb}') no-repeat center center/cover"></div>
                                 <div class="title">
-                                <h4>${e[i].title}</h4>
-                                <p>${e[i].subTitle}</p>
+                                    <h4>${e[i].title}</h4>
+                                    <p>${e[i].subTitle}</p>
                                 </div>
                               </a>`
             document.getElementById('proj').append(temp);
@@ -119,6 +119,7 @@ window.onload = function(){
                           <div class="modal-wrap">
                               <div class="img"><img src="${imgUrl}" alt="${title}"></div>
                           </div>
+                          <div class="cursor"></div>
                           </div>`
         document.getElementById('modal').append(temp);
         scrollPosition = window.pageYOffset;
@@ -126,6 +127,7 @@ window.onload = function(){
         body.style.position = 'fixed';
         body.style.top = `-${scrollPosition}px`;
         body.style.width = '100vw';
+        body.style.cursor = 'url(../img/cursor.svg), auto';
         //모달 닫기
         var modalInner = document.querySelector('.modal-inner');
         modalInner.addEventListener('click', function(){
@@ -134,13 +136,11 @@ window.onload = function(){
             body.style.removeProperty('position');
             body.style.removeProperty('top');
             body.style.removeProperty('width');
+            body.style.removeProperty('cursor');
             window.scrollTo(0, scrollPosition);
         })
+        
     }
-
-
-
-
 
     //toggleClass
     function toggleClass(element, className) {
