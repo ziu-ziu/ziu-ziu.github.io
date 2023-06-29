@@ -9,7 +9,7 @@ window.onload = function(){
         var currentY = window.scrollY;
         var elem = document.getElementById('scroll-event');
         var clientRectBg = elem.getBoundingClientRect();
-        var abTop = clientRectBg.top + currentY;
+        var abTop = clientRectBg.top + currentY - 100;
         if(currentY > abTop){
             document.getElementById('detail').classList.add("active");
         }else {

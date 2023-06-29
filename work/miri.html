@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiRi Mobile App Renewal</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <script type="text/javascript" src="../js/work.js"></script>
+</head>
+<style>
+    #detail {background: #154733; transition: all 0.3s ease-in-out;}
+    .sec {margin-top: 20rem;}
+    .sec .tit em {display: block; margin-bottom: 1rem; font-size: 1.3rem;}
+    .sec .tit h3 {margin-bottom: 2rem; font-size: 3rem; font-weight: 700; line-height: 1.2;}
+    .intro {background: url(../img/02_proj/10.miri/bg.jpg) no-repeat center center/cover;}
+    .overview {text-align: center; margin-top: 10rem;}
+    .overview .dscr {margin: 0 auto; width: 60%;}
+    .review {display: flex; position: relative;}
+    .review .left {width: 30%;}
+    .review .right img {position: absolute; top: 0; right: 0px; width: 60% !important;}
+    .solution .dscr {display: flex; justify-content: space-between;}
+    .solution .dscr .item {width: 30%; margin-top: 2rem;}
+    .solution .dscr .item b {display: block; font-weight: 700;}
+    #detail.active {background: #fff; color: #000;}
+    @media screen and (min-width : 1025px) {
+        .mobile {display: none;}
+    }
+    @media screen and (max-width : 1024px) {
+        .web {display: none;}
+        .overview .dscr {width: 100%;}
+        .review {display: block; height: auto !important;}
+        .review .left {width: 100%;}
+        .review .right img, .review .right video {position: relative; width: 100% !important; margin-top: 3rem;}
+        #detail .sec.right-full {padding-right: 40px !important;}
+    }
+    @media screen and (max-width : 991px) {
+        .solution .dscr {flex-direction: column;}
+        .solution .dscr .item {width: 100%; margin-bottom: 2rem;}
+    }
+    @media screen and (max-width : 768px) {
+        #detail .sec.overview {margin-top: 0;}
+        #detail .sec.overview .tit {margin-top: 20rem;}
+    }
+    @media screen and (max-width: 360px) {
+        .solution .dscr {margin-bottom: 4rem;}
+    }
+</style>
+<body>
+    <section id="detail" class="col-1">
+        <button id="close">
+            <span class="line1"></span>
+            <span class="line2"></span>
+        </button>
+        <!--intro-->
+        <div class="intro full-height">
+            <div class="tit break">
+                미리 모바일앱 리뉴얼
+                <p class="tit-sub">2023 / Mobile App</p>
+            </div>
+            <div class="info-wrap">
+                <div class="info">
+                    <dl class="item">
+                        <dt>Client</dt>
+                        <dd>Wizdome</dd>
+                    </dl>
+                    <dl class="item">
+                        <dt>Period</dt>
+                        <dd>2022.01~2023.05</dd>
+                    </dl>
+                    <dl class="item">
+                        <dt>Contribution</dt>
+                        <dd>Design 100%</dd>
+                    </dl>
+                    <dl class="item">
+                        <dt>Use tool</dt>
+                        <dd>Figma</dd>
+                    </dl>
+                </div>
+                <div class="link">
+                    <div class="appstore">
+                        <a href="https://apps.apple.com/kr/app/miri-%EA%B4%91%EC%97%AD%EB%B2%84%EC%8A%A4-%EC%A2%8C%EC%84%9D%EC%98%88%EC%95%BD-%EC%84%9C%EB%B9%84%EC%8A%A4/id1251927393" target="_blank">( APP STORE ↗ )</a>
+                    </div>
+                    <div class="googlestore">
+                        <a href="https://play.google.com/store/apps/details?id=kr.co.wizdome.miri&hl=ko&gl=US" target="_blank">( GOOGLE STORE ↗ )</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--overview-->
+        <div class="sec overview">
+            <div class="tit">
+                <em>OVERVIEW</em>
+                <h3>내가 타는 버스, 매일 만석이라면?</h3>
+            </div>
+            <div class="dscr">
+                매일 아침이면 수원, 용인, 동탄 등의 버스정류장에서 서울로 가는 버스틀 타려는 줄이 길게 늘어섭니다. 반대로 퇴근시간이 되면 명동, 강남역 부근에는 경기도로 퇴근하려는 광역버스 승객들이 몰려듭니다. 게다가 경기도와 서울을 오가는 광역버스 절반 이상이 입석금지를 시행하면서 승차난은 더 심해졌습니다.<br><br>
+                MiRi는 스마트모빌리티 스티트업인 위즈돔에서 2017년에 출시한 앱으로, 모바일 앱을 통해 미리 좌석을 예약하고 정해진 시간에 정류장 대기없이 바로 탑승할 수 있는 서비스입니다. 기존의 문제점을 해결하고 신규 기능이 추가되는 V3 버전으로 2023년에 리뉴얼하였습니다.
+            </div>
+        </div>
+        <!--user review-->
+        <div class="sec review right-full-onlyweb">
+            <div class="left">
+                <div class="tit">
+                    <em>User Review</em>
+                    <h3>매일 이용하는 서비스지만<br>
+                        너무 불편해!</h3>
+                </div>
+                <div class="dscr">
+                    리뉴얼 전 앱의 평점은 앱스토어 3.0 / 플레이스토어 1.6으로 굉장히 낮습니다. 어떤 불편함이 있는지 알아보기 위해 앱스토어의 40개, 플레이스토어의 374개 리뷰 중 사용자가 공통적으로 느끼고 있는 불편함을 모아봤습니다.
+                </div>
+            </div>
+            <div class="right">
+                <img src="../img/02_proj/10.miri/review.png" alt="리뷰이미지" class="user-review web">
+                <img src="../img/02_proj/10.miri/review_m.png" alt="리뷰이미지" class="user-review mobile">
+            </div>
+        </div>
+        <!--solution-->
+        <div class="sec solution" id="scroll-event">
+            <div class="tit">
+                <em>User Review</em>
+                <h3>노선 검색부터 결제까지<br>
+                    전반적인 사용성 개선</h3>
+            </div>
+            <div class="dscr">
+                <div class="item">
+                    <b>쉽고 빠르게 예약하기</b>
+                    MiRi를 이용하는 유저는 매일 같은 버스를 타는 유저가 대다수입니다. 항상 검색해서 예약해야하는 불편함을 없애고자 즐겨찾기 기능을 추가하였습니다.
+                </div>
+                <div class="item">
+                    <b>예약 가능한지 미리 확인하기</b>
+                    로그인하지 않아도 어떤 버스가 예약이 가능한지 바로 확인할 수 있습니다. 특히 위치 기반 검색으로 주변 정류장을 빠르게 찾을 수 있습니다.
+                </div>
+                <div class="item">
+                    <b>더 쉬워진 예치금 충전 방식</b>
+                    미리 등록한 교통카드로 예치금을 충전할 수 있습니다. 또한 ‘이 결제수단을 다음에도 사용’을 설정하면 카드정보를 입력하지 않고 바로 예치금을 충전할 수 있습니다.
+                </div>
+            </div>
+            <div class="mockup mockup_m">
+                <div class="item empty">
+                </div>
+                <div class="item">
+                    <div class="mockup-img">
+                        <img src="../img/02_proj/10.miri/1main.jpg" alt="MiRi 메인">
+                    </div>
+                    <div class="caption">메인</div>
+                </div>
+                <div class="item">
+                    <div class="mockup-img">
+                        <img src="../img/02_proj/10.miri/2realtime.jpg" alt="MiRi 실시간 버스 위치">
+                    </div>
+                    <div class="caption">실시간 버스 위치</div>
+                </div>
+            </div>
+            <div class="mockup mockup_m">
+                <div class="item">
+                    <div class="mockup-img">
+                        <img src="../img/02_proj/10.miri/3search.jpg" alt="MiRi 노선검색">
+                    </div>
+                    <div class="caption">노선검색</div>
+                </div>
+                <div class="item">
+                    <div class="mockup-img">
+                        <img src="../img/02_proj/10.miri/4mylocation.jpg" alt="MiRi 내 주변 정률장 검색">
+                    </div>
+                    <div class="caption">내 주변 정률장 검색</div>
+                </div>
+                <div class="item empty">
+                </div>
+            </div>
+            <div class="mockup mockup_m col-3">
+                <div class="item">
+                    <div class="mockup-img">
+                        <video src="../img/02_proj/10.miri/bookmark.mp4" autoplay loop>
+                        </video>
+                    </div>
+                    <div class="caption">노선 즐겨찾기</div>
+                </div>
+                <div class="item">
+                    <div class="mockup-img">
+                        <img src="../img/02_proj/10.miri/6booking.jpg" alt="MiRi 예약하기">
+                    </div>
+                    <div class="caption">예약하기</div>
+                </div>
+                <div class="item">
+                    <div class="mockup-img">
+                        <img src="../img/02_proj/10.miri/7list.jpg" alt="MiRi 예약내역">
+                    </div>
+                    <div class="caption">예약내역</div>
+                </div>
+            </div>
+            <div class="mockup mockup_m">
+                <div class="item empty">
+                </div>
+                <div class="item">
+                    <div class="mockup-img">
+                        <img src="../img/02_proj/10.miri/8charge.jpg" alt="MiRi 예치금 충전(충전 금액)">
+                    </div>
+                    <div class="caption">예치금 충전(충전 금액)</div>
+                </div>
+                <div class="item">
+                    <div class="mockup-img">
+                        <img src="../img/02_proj/10.miri/9card.jpg" alt="MiRi 예치금 충전(충전 수단)">
+                    </div>
+                    <div class="caption">예치금 충전(충전 수단)</div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="title">MiRi Mobile App Renewal</div>
+            <div class="desiner">©Designer Jiwoo</div>
+        </div>
+    </section>
+</body>
+<script>
+    //user review 영역 높이 조절
+    function reviewHeightControl(){
+        const textH = document.querySelector('.review .left').offsetHeight;
+        const imgH = document.querySelector('.user-review').offsetHeight;
+        if(textH < imgH){
+            document.querySelector('.review').style.height = Number(imgH) + 'px';
+        }
+    }
+    //info이동
+    function infoMove(){
+        const infoElem = document.querySelector('.info-wrap');
+        const targetElem = document.querySelector('.overview');
+        const originElem = document.querySelector('.intro')
+        if (matchMedia("screen and (max-width: 768px)").matches) {
+            targetElem.prepend(infoElem)
+        } else {
+            originElem.append(infoElem)
+        }
+    }
+
+    reviewHeightControl();
+    infoMove();
+
+    //리사이즈
+    window.onresize = function() {
+        reviewHeightControl();
+        infoMove();
+    }
+</script>
+</html>

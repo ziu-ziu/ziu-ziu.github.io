@@ -13,19 +13,19 @@ window.onload = function(){
 
     //project list
     let projectMain = [
-        {title:'팡세 배양육 시식회 어플리케이션 디자인', subTitle:'2022 / Editorial', thumb:'11_pensees_print.jpg', link:'./work/pensees.html', target:'', class:'editorial main', cate:'editorial'},
-        // {title:'페스타 셔틀버스 앱 표준화', subTitle:'2022 / Mobile App', thumb:'01_festa.jpg', link:'./work/Festa-Standardization.html', target:'', class:'uiux main', cate:'uiux'},
-        {title:'무료디자인 리소스 사이트', subTitle:'2022 / Personal Project', thumb:'04_free.jpg', link:'https://pie-glow.github.io/', target:'_blank', class:'uiux main', cate:'uiux'},
-        {title:'미트미트 리플렛', subTitle:'2021 / Leaflet', thumb:'13_meatmeat_leaflet.jpg', link:'./work/meatmeat-leaflet.html', target:'', class:'editorial', cate:'editorial'},
-        {title:'미트미트 홈페이지', subTitle:'2021 / Website', thumb:'12_meatmeat.jpg', link:'https://ziu-ziu.github.io/meatmeat/', target:'_blank', class:'uiux', cate:'uiux'},
-        {title:'FACTORY TALK LOGO PROPOSAL', subTitle:'2021 / Logo', thumb:'07_factallk.jpg', link:'./work/factalk.html', target:'', class:'branding main', cate:'branding'},
-        {title:'The City Night', subTitle:'2021 / Artwork', thumb:'03_the_city_night.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
-        {title:'Shooting star', subTitle:'2021 / Artwork', thumb:'02_shooting_star.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
-        {title:'쉐정 2020 설 선물세트 패키지 디자인', subTitle:'2020 / Package', thumb:'10_cj20package.jpg', link:'./work/cj2020.html', target:'', class:'package', cate:'package'},
-        {title:'GGAC 레퍼토리시즌 2020', subTitle:'2019 / Website', thumb:'05_ggac.jpg', link:'https://ziu-ziu.github.io/GGAC2022/', target:'_blank', class:'uiux', cate:'uiux'},
-        {title:'쉐정 2019 추석 선물세트 디자인', subTitle:'2019 / Package', thumb:'09_cj19package.jpg', link:'./work/cj2019.html', target:'', class:'package', cate:'package'},
-        {title:'도시재생실증연구단 홍보 리플렛&부스', subTitle:'2015-2017 / Leaflet, Booth', thumb:'06_kourc.jpg', link:'./work/KOURC.html', target:'', class:'editorial', cate:'editorial'},
-        {title:'MK코퍼레이션 트로이필 키트 패키지', subTitle:'2013 / Package', thumb:'08_troipeel.jpg', link:'./work/troipeel.html', target:'', class:'package', cate:'package'},
+        {title:'미리 모바일앱 리뉴얼', subTitle:'2023 / Mobile App', thumb:'10_miri.jpg', link:'./work/miri.html', target:'', class:'uiux main', cate:'uiux'},
+        {title:'팡세 배양육 시식회 어플리케이션 디자인', subTitle:'2022 / Editorial', thumb:'07_pensees_print.jpg', link:'./work/pensees.html', target:'', class:'editorial main', cate:'editorial'},
+        {title:'무료디자인 리소스 사이트', subTitle:'2022 / Personal Project', thumb:'free.jpg', link:'https://pie-glow.github.io/', target:'_blank', class:'uiux main', cate:'uiux'},
+        {title:'미트미트 리플렛', subTitle:'2021 / Leaflet', thumb:'08_meatmeat_leaflet.jpg', link:'./work/meatmeat-leaflet.html', target:'', class:'editorial', cate:'editorial'},
+        {title:'미트미트 홈페이지', subTitle:'2021 / Website', thumb:'09_meatmeat.jpg', link:'https://ziu-ziu.github.io/meatmeat/', target:'_blank', class:'uiux', cate:'uiux'},
+        {title:'FACTORY TALK LOGO PROPOSAL', subTitle:'2021 / Logo', thumb:'02_factallk.jpg', link:'./work/factalk.html', target:'', class:'branding', cate:'branding'},
+        {title:'The City Night', subTitle:'2021 / Artwork', thumb:'the_city_night.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
+        {title:'Shooting star', subTitle:'2021 / Artwork', thumb:'shooting_star.jpg', link:'javascript:void(0)', target:'', class:'etc modal', modal:'true', cate:'etc',},
+        {title:'쉐정 2020 설 선물세트 패키지 디자인', subTitle:'2020 / Package', thumb:'03_cj20package.jpg', link:'./work/cj2020.html', target:'', class:'package', cate:'package'},
+        {title:'GGAC 레퍼토리시즌 2020', subTitle:'2019 / Website', thumb:'ggac.jpg', link:'https://ziu-ziu.github.io/GGAC2022/', target:'_blank', class:'uiux', cate:'uiux'},
+        {title:'쉐정 2019 추석 선물세트 디자인', subTitle:'2019 / Package', thumb:'04_cj19package.jpg', link:'./work/cj2019.html', target:'', class:'package', cate:'package'},
+        {title:'도시재생실증연구단 홍보 리플렛&부스', subTitle:'2015-2017 / Leaflet, Booth', thumb:'05_kourc.jpg', link:'./work/KOURC.html', target:'', class:'editorial', cate:'editorial'},
+        {title:'MK코퍼레이션 트로이필 키트 패키지', subTitle:'2013 / Package', thumb:'06_troipeel.jpg', link:'./work/troipeel.html', target:'', class:'package', cate:'package'},
     ];
     function projectFilter(e){
         e.forEach((a,i) => {
