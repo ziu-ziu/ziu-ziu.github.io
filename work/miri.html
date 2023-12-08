@@ -14,6 +14,9 @@
     .sec .tit em {display: block; margin-bottom: 1rem; font-size: 1.3rem;}
     .sec .tit h3 {margin-bottom: 2rem; font-size: 3rem; font-weight: 700; line-height: 1.2;}
     .intro {background: url(../img/02_proj/10.miri/bg.jpg) no-repeat center center/cover;}
+    .intro .tit .award {max-width: 100px; margin-top: 20px;}
+    .intro .device {position: absolute; top: 50%; left: 50%; transform: translate3d(-50%, -40%, 0px);}
+    .intro .device img {max-width: 316px;}
     .overview {text-align: center; margin-top: 10rem;}
     .overview .dscr {margin: 0 auto; width: 60%;}
     .review {display: flex; position: relative;}
@@ -26,8 +29,15 @@
     @media screen and (min-width : 1025px) {
         .mobile {display: none;}
     }
+    @media screen and (max-width : 1280px) {
+        #detail .intro .tit {font-size: 6rem;}
+        .intro .tit .award {max-width: 80px;}
+        .intro .device img {max-width: 275px;}
+    }
     @media screen and (max-width : 1024px) {
+        #detail .intro.full-height {height: auto;}
         .web {display: none;}
+        .intro .device {display: none;}
         .overview .dscr {width: 100%;}
         .review {display: block; height: auto !important;}
         .review .left {width: 100%;}
@@ -37,10 +47,6 @@
     @media screen and (max-width : 991px) {
         .solution .dscr {flex-direction: column;}
         .solution .dscr .item {width: 100%; margin-bottom: 2rem;}
-    }
-    @media screen and (max-width : 768px) {
-        #detail .sec.overview {margin-top: 0;}
-        #detail .sec.overview .tit {margin-top: 20rem;}
     }
     @media screen and (max-width: 360px) {
         .solution .dscr {margin-bottom: 4rem;}
@@ -57,6 +63,7 @@
             <div class="tit break">
                 미리 모바일앱 리뉴얼
                 <p class="tit-sub">2023 / Mobile App</p>
+                <img class="award" src="../img/02_proj/10.miri/app_award_23winner.svg">
             </div>
             <div class="info-wrap">
                 <div class="info">
@@ -85,6 +92,9 @@
                         <a href="https://play.google.com/store/apps/details?id=kr.co.wizdome.miri&hl=ko&gl=US" target="_blank">( GOOGLE STORE ↗ )</a>
                     </div>
                 </div>
+            </div>
+            <div class="device">
+                <img src="../img/02_proj/10.miri/main_device.svg" alt="">
             </div>
         </div>
         <!--overview-->
@@ -222,24 +232,34 @@
         }
     }
     //info이동
-    function infoMove(){
-        const infoElem = document.querySelector('.info-wrap');
-        const targetElem = document.querySelector('.overview');
-        const originElem = document.querySelector('.intro')
-        if (matchMedia("screen and (max-width: 768px)").matches) {
-            targetElem.prepend(infoElem)
-        } else {
-            originElem.append(infoElem)
+    // function infoMove(){
+    //     const infoElem = document.querySelector('.info-wrap');
+    //     const targetElem = document.querySelector('.overview');
+    //     const originElem = document.querySelector('.intro')
+    //     if (matchMedia("screen and (max-width: 914px)").matches) {
+    //         targetElem.prepend(infoElem)
+    //     } else {
+    //         originElem.append(infoElem)
+    //     }
+    // }
+
+    //메인 디바이스, 어워드 이미지 사이즈 변경
+    function mainImageControl(){
+        const awardElem = document.querySelector('.award');
+        const deviceElem = document.querySelector('.device img');
+        if(window.outerHeight < 750){
+            awardElem.style.maxWidth = "70px";
+            deviceElem.style.maxWidth = "200px";
         }
     }
 
     reviewHeightControl();
-    infoMove();
+    mainImageControl();
 
     //리사이즈
     window.onresize = function() {
         reviewHeightControl();
-        infoMove();
+        mainImageControl();
     }
 </script>
 </html>
