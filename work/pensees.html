@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>팡세 배양육 시식회 어플리케이션 디자인</title>
     <link rel="stylesheet" href="../css/detail.css">
-    <script type="text/javascript" src="../js/work.js"></script>
 </head>
 <body>
     <section id="detail" class="col-2">
@@ -16,7 +15,7 @@
         </button>
         <!--intro-->
         <div class="intro">
-            <div class="tit ko">
+            <div class="tit">
                 팡세 배양육 시식회 어플리케이션 디자인
                 <p class="tit-sub">2022 / Editorial</p>
             </div>
@@ -43,4 +42,10 @@
         </div>
     </section>
 </body>
+<script>
+    //닫기
+    document.getElementById('close').addEventListener('click', (e) => {
+        window.history.back();
+    })
+</script>
 </html>

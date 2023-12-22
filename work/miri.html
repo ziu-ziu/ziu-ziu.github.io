@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiRi Mobile App Renewal</title>
     <link rel="stylesheet" href="../css/detail.css">
-    <script type="text/javascript" src="../js/work.js"></script>
 </head>
 <style>
     #detail {background: #154733; transition: all 0.3s ease-in-out;}
+    #detail.active {background: #fff; color: #000;}
     .sec {margin-top: 20rem;}
     .sec .tit em {display: block; margin-bottom: 1rem; font-size: 1.3rem;}
     .sec .tit h3 {margin-bottom: 2rem; font-size: 3rem; font-weight: 700; line-height: 1.2;}
@@ -25,9 +25,9 @@
     .solution .dscr {display: flex; justify-content: space-between;}
     .solution .dscr .item {width: 30%; margin-top: 2rem;}
     .solution .dscr .item b {display: block; font-weight: 700;}
-    #detail.active {background: #fff; color: #000;}
     @media screen and (min-width : 1025px) {
         .mobile {display: none;}
+        .review .right {height: 844px;}
     }
     @media screen and (max-width : 1280px) {
         #detail .intro .tit {font-size: 6rem;}
@@ -105,7 +105,7 @@
             </div>
             <div class="dscr">
                 매일 아침이면 수원, 용인, 동탄 등의 버스정류장에서 서울로 가는 버스틀 타려는 줄이 길게 늘어섭니다. 반대로 퇴근시간이 되면 명동, 강남역 부근에는 경기도로 퇴근하려는 광역버스 승객들이 몰려듭니다. 게다가 경기도와 서울을 오가는 광역버스 절반 이상이 입석금지를 시행하면서 승차난은 더 심해졌습니다.<br><br>
-                MiRi는 스마트모빌리티 스티트업인 위즈돔에서 2017년에 출시한 앱으로, 모바일 앱을 통해 미리 좌석을 예약하고 정해진 시간에 정류장 대기없이 바로 탑승할 수 있는 서비스입니다. 기존의 문제점을 해결하고 신규 기능이 추가되는 V3 버전으로 2023년에 리뉴얼하였습니다.
+               miri는 스마트모빌리티 스티트업인 위즈돔에서 2017년에 출시한 앱으로, 모바일 앱을 통해 미리 좌석을 예약하고 정해진 시간에 정류장 대기없이 바로 탑승할 수 있는 서비스입니다. 기존의 문제점을 해결하고 신규 기능이 추가되는 V3 버전으로 2023년에 리뉴얼하였습니다.
             </div>
         </div>
         <!--user review-->
@@ -135,7 +135,7 @@
             <div class="dscr">
                 <div class="item">
                     <b>쉽고 빠르게 예약하기</b>
-                    MiRi를 이용하는 유저는 매일 같은 버스를 타는 유저가 대다수입니다. 항상 검색해서 예약해야하는 불편함을 없애고자 즐겨찾기 기능을 추가하였습니다.
+                   miri를 이용하는 유저는 매일 같은 버스를 타는 유저가 대다수입니다. 항상 검색해서 예약해야하는 불편함을 없애고자 즐겨찾기 기능을 추가하였습니다.
                 </div>
                 <div class="item">
                     <b>예약 가능한지 미리 확인하기</b>
@@ -223,6 +223,24 @@
     </section>
 </body>
 <script>
+    //닫기
+    document.getElementById('close').addEventListener('click', (e) => {
+        window.history.back();
+    })
+    
+    //스크롤이벤트
+    window.addEventListener('scroll', () => {
+            var currentY = window.scrollY;
+        var elem = document.getElementById('scroll-event');
+        var clientRectBg = elem.getBoundingClientRect();
+        var abTop = clientRectBg.top + currentY - 100;
+        if(currentY > abTop){
+            document.getElementById('detail').classList.add("active");
+        }else {
+            document.getElementById('detail').classList.remove("active");
+        }
+    })
+
     //user review 영역 높이 조절
     function reviewHeightControl(){
         const textH = document.querySelector('.review .left').offsetHeight;
