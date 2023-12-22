@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festa Shuttle Bus App Standardization</title>
     <link rel="stylesheet" href="../css/detail.css">
-    <script type="text/javascript" src="../js/work.js"></script>
     <script type="text/javascript" src="../js/slide.js"></script>
 </head>
 <style>
@@ -211,5 +210,16 @@
         document.getElementById('detail').classList.remove("active");
     }
   })
+
+  //닫기
+ document.getElementById('close').addEventListener('click', (e) => {
+    window.history.back();
+  })
+
+  //리사이즈
+  window.onresize = function() {
+        reviewHeightControl();
+        mainImageControl();
+  }
 </script>
 </html>
