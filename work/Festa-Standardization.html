@@ -7,49 +7,50 @@
     <title>Festa Shuttle Bus App Standardization</title>
     <link rel="stylesheet" href="../css/detail.css">
     <script type="text/javascript" src="../js/work.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
 </head>
 <style>
+.arrow {display: none;}
 #detail {background: #36254F; transition: all 0.3s ease-in-out;}
+#detail.active {background: #fff; color: #000;}
 #detail .intro {background: url(../img/02_proj/01.festa/title.jpg) no-repeat center center/cover;}
 #detail .intro .tit em {display: block; line-height: 1;}
 #detail .intro .tit .tit-sub {margin-top: 40px;}
-#detail .inner .sec.overview .tit {font-size: 32px; margin-top: 20px; margin-bottom: 30px;}
-#detail .inner .sec .tit {font-size: 150px; text-transform: uppercase;}
-#detail .inner .sec .tit span {font-size: 40px;}
-#detail .inner .sec .tit p {line-height: 1;}
-#detail .inner .sec .cont {margin-top: -3%;}
-#detail .inner .sec .cont.flex {display: flex; justify-content: space-between;}
-#detail .inner .sec .cont .col-3 {display: flex;}
-#detail .inner .sec .cont .col-3 > div {width: 33.333%;}
-#detail .inner .sec .cont .col-3.right {justify-content: flex-end;}
-#detail .inner .sec .cont .col-3 .item:nth-child(2n) {margin-top: 100px;}
-#detail .inner .sec .cont .col-3 .item .m_mockup {margin-left: 80px; margin-right: 80px;}
-#detail .inner .sec .cont .col-3 .item .m_mockup > div {position: relative; padding-bottom: 200%;}
-#detail .inner .sec .cont .col-3 .item .m_mockup > div img {width: 100%; position: absolute; left: 0; right: 0; bottom: 0; object-fit: cover;}
-#detail .inner .sec .cont .col-3 .item span {font-size: 14px; margin-left: 80px;}
-#detail .inner .sec.last {padding-bottom: 100px;}
-#detail.active {background: #fff; color: #36254F;}
-#detail.active #close span {background: #36254F;}
+#detail .inner .sec .tit {font-size: 20px;}
+#detail .inner .sec .dscr .tit {margin-bottom: 20px;}
+#detail .inner .sec .slide .slide-item {padding-bottom: 50%;}
+#detail .inner .sec .slide .slide1 {background: url(../img/02_proj/01.festa/slide1.jpg) no-repeat center; background-size: 100%;}
+#detail .inner .sec .slide .slide2 {background: url(../img/02_proj/01.festa/slide2.jpg) no-repeat center; background-size: 100%;}
+#detail .inner .sec .slide .slide3 {background: url(../img/02_proj/01.festa/slide3.jpg) no-repeat center; background-size: 100%;}
+#detail .inner .sec .slide .slide4 {background: url(../img/02_proj/01.festa/slide4.jpg) no-repeat center; background-size: 100%;}
+#detail .inner .sec .uikit {padding: 0; background-color: #EFECEF; display: flex; justify-content: space-between; overflow: hidden;}
+#detail .inner .sec .uikit .txt-area {padding: 80px; padding-right: 0;}
+#detail .inner .sec .uikit img {width: 70%; object-fit: contain;}
+#detail .inner .sec .uikit .img-tit {margin-bottom: 40px; font-size: 5rem; font-weight: bold; line-height: 1.1;}
+#detail .inner .sec .uikit .img-cont li {display: flex; align-items: center; margin-bottom: 12px;}
+#detail .inner .sec .uikit .img-cont li::before {display: inline-block; content: ""; margin-right: 10px ; width: 28px; height: 28px; background: url(../img/02_proj/01.festa/check.png) no-repeat; background-size: contain;}
+
 @media screen and (min-width : 768px) {
   #detail .inner .sec {padding-top: 200px;}
 }
 @media screen and (min-width : 1301px) {
-  #detail .inner .sec.overview {display: flex; justify-content: space-between;}
-  #detail .inner .sec.overview .wrap {width: 50%;}
+  #detail .inner .sec .dscr {display: flex;}
+  #detail .inner .sec .dscr .tit {width: 30%; font-weight: bold;}
+  #detail .inner .sec .dscr .cont {width: 70%;}
+  #detail .inner .sec.left .dscr {display: block;}
+  #detail .inner .sec.left .dscr .cont {width: 50%;}
+  #detail .mockup_m .item .mockup-img.top {margin-top: -400px;}
 }
 @media screen and (max-width : 1300px) {
-  #detail .inner .sec .tit {font-size: 100px;}
-  #detail .inner .sec .cont .col-3 {display: block;}
-  #detail .inner .sec .cont .col-3 > div {width: 100%;}
-  #detail .inner .sec .cont .col-3:last-child {margin-top: 100px;}
+  #detail .inner .sec .uikit {flex-direction: column;}
+  #detail .inner .sec .uikit img {width: 100%;}
+  #detail .inner .sec .uikit .txt-area {padding: 8vw;}
+  #detail .inner .sec .uikit .img-tit {
+    font-size: 8vw;
+  }
 }
-@media screen and (max-width : 979px) {
-  
-}
-@media screen and (max-width : 767px) {
+@media screen and (max-width : 768px) {
   #detail .inner .sec {padding-top: 80px;}
-  #detail .inner .sec.last {padding-top: 80px;}
-  #detail .inner .sec .tit {font-size: 10vw;}
 }
 </style>
 <body>
@@ -60,105 +61,134 @@
         </button>
         <!--intro-->
         <div class="intro full-height">
-            <div class="tit en">
-            <em><span>Festa Shuttle</span> <span>Bus App</span></em>
-            <em>Standardization</em>
-            <p class="tit-sub">페스타 셔틀버스 앱 표준화</p>
+            <div class="tit">
+              <em>페스타 셔틀버스 앱 디자인 표준화</em>
+              <p class="tit-sub">2021 / Mobile App</p>
             </div>
-            <div class="info">  
-            <dl class="item">
-                <dt>Project</dt>
-                <dd>Mobile App</dd>
-            </dl>
-            <dl class="item">
-                <dt>Client</dt>
-                <dd>Wizdome</dd>
-            </dl>
-            <dl class="item">
-                <dt>Period</dt>
-                <dd>2021.08</dd>
-            </dl>
-            <dl class="item">
-                <dt>Contribution</dt>
-                <dd>Design&Publishing 100%</dd>
-            </dl>
+            <div class="info-wrap">
+              <div class="info">
+                <dl class="item">
+                    <dt>Client</dt>
+                    <dd>Wizdome</dd>
+                </dl>
+                <dl class="item">
+                    <dt>Period</dt>
+                    <dd>2021.08</dd>
+                </dl>
+                <dl class="item">
+                    <dt>Contribution</dt>
+                    <dd>Design&Publishing 100%</dd>
+                </dl>
+                <dl class="item">
+                  <dt>Use tool</dt>
+                  <dd>Figma</dd>
+                </dl>
+              </div>
             </div>
         </div>
         <div class="inner">
-            <!--overview-->
-            <div class="sec overview">
-              <div class="blank"></div>
-              <div class="wrap">
-                <div class="tit">OVERVIEW</div>
-                <div class="cont flex"><p>위즈돔에서는 서울모터쇼, UMF, 스파르탄레이스 등 다양한 페스티벌의 셔틀버스를 예약할 수 있는 어플을 운영하고 있습니다. 매번 새로운 페스티벌이 생길때 마다 셔틀버스 예약 어플을 새롭게 만들어야해서 개발공수가 많이 들고, 시간관계상 메인만 해당 페스티벌의 룩앤필을 사용해왔기에 전체적인 디자인톤이 맞지 않는 문제점이 있었습니다. 따라서 개발 공수를 최소화한 효과적인 UI 구축으로 표준화하는 것을 이번 프로젝트에서 가장 중요한 목표로 잡았으며, <a href="https://www.figma.com/file/LwoWNwHCkElcnfpxFz3OzI/Festa-Design-System?node-id=0%3A1" target="_blank">디자인 가이드</a>를 작성하였습니다.</p></div>
+            <div class="sec">
+              <div class="dscr">
+                <div class="tit">Project Overview</div>
+                <div class="cont">
+                  <p>위즈돔에서는 서울모터쇼, UMF, 스파르탄레이스 등 다양한 페스티벌의 셔틀버스를 예약할 수 있는 어플을 운영하고 있습니다. 새로운 페스티벌이 생길때 마다 조금씩 다른 요건을 충족하기 위해 매번 셔틀버스 예약 어플을 새롭게 만들어야하고, 짧게 배정된 개발기간으로 메인만 해당 페스티벌의 룩앤필을 사용해왔기 때문에 어플의 전체적인 디자인톤이 맞지 않는 문제점이 있었습니다. 따라서 개발 공수는 최소화하고 각 페스티벌의 룩앤필을 적용한 효과적인 UI가 필요함을 깨닫고 다양한 요건을 유연하게 충족할 수 있는 UI 표준화를 목표로 프로젝트를 진행했습니다.</p>
+                </div>
               </div>
             </div>
-            <!--feature-->
-            <div class="sec" id="scroll-event">
-              <div class="tit">
-                <span>1.</span>
-                <p>Well - defended<br>identity</p>
+            <div class="sec full-width" id="scroll-event">
+              <img src="../img/02_proj/01.festa/overview.jpg" alt="">
+            </div>
+            <div class="sec">
+              <div class="dscr">
+                <div class="tit">Well - defended identity</div>
+                <div class="cont">
+                  <p>각 페스티벌의 키 비주얼인 포스터를 활용한 메인 비주얼과 Primary 컬러를 적용하여 사용자가 페스티벌을 처음 접하는 순간부터 셔틀버스 예약 앱을 사용하기까지 동일한 경험을 할 수 있도록 하였습니다.</p>
+                </div>
               </div>
-              <div class="cont flex">
-                <img src="../img/02_proj/01.festa/well-defended.png" alt="">
+            </div>
+            <div class="sec">
+              <div class="slide">
+                <div class="slide-wrap">
+                  <div class="slide-item slide1"></div>
+                  <div class="slide-item slide2"></div>
+                  <div class="slide-item slide3"></div>
+                  <div class="slide-item slide4"></div>
+                </div>
+                <div class="arrow">
+                  <a href="" class="prev">이전</a>
+                  <a href="" class="next">다음</a>
+                </div>
+                <ul class="pagination">
+                </ul>
+              </div>
+            </div>
+            <div class="sec">
+              <div class="dscr">
+                <div class="tit">Flexible Component</div>
+                <div class="cont">
+                  <p>행사장행 또는 귀가행만 있는 경우, 행사 날짜가 하루만 있는 경우, 행사 날짜가 여러날짜인 경우, 자유석인 경우, 지정석인 경우 등 다양한 가능성을 다 어우를 수 있게 컴포넌트를 제작하였습니다. 요건에 따라 필요한 컴포넌트를 조합하여 앱을 구성할 수 있습니다.</p>
+                </div>
               </div>
             </div>
             <div class="sec full-width">
-              <video autoplay loop muted>
-                <source src="../img/02_proj/01.festa/video.mp4" type="video/mp4">
-                Sorry, your browser doesn't support embedded videos. Please upgrade your browser to the latest version.
-              </video>
-            </div>
-            <div class="sec last">
-              <div class="tit">
-                <span>2.</span>
-                <p>Flexible<br>Component</p>
+              <div class="uikit">
+                <div class="txt-area">
+                  <div class="img-tit">
+                    Festa Shuttle Bus App<br>
+                    Standardization Component
+                  </div>
+                  <ul class="img-cont">
+                    <li>Accordion</li>
+                    <li>Date Picker</li>
+                    <li>Seat Picker</li>
+                    <li>Ticket</li>
+                  </ul>
+                </div>
+                <img src="../img/02_proj/01.festa/festa_kit.png" alt="">
               </div>
-              <div class="cont">
-                <div class="col-3 right">
-                  <div class="item">
-                    <div class="m_mockup">
-                      <div class="mock_inner">
-                        <div class="m1">
-                          <img src="../img/02_proj/01.festa/02.svg" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <span>행사장 날짜 dropdown</span>
-                  </div>
-                  <div class="item">
-                    <div class="m_mockup">
-                      <div class="mock_inner">
-                        <div class="m2">
-                          <img src="../img/02_proj/01.festa/03.svg" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <span>행사장 날짜 캘린더 선택</span>
-                  </div>
+            </div>
+            <div class="sec left">
+              <div class="dscr">
+                <div class="tit">Simply Process</div>
+                <div class="cont">
+                  <p>별도의 회원가입 없이 쉽고 간결한 프로세스를 적용하여 사용자가 빠르게 예약할 수 있도록 구성하였습니다. 예약/결제 및 예약확인에 필요한 메뉴만 구성하여 ‘예약’ 앱의 기능에 충실하고자 하였습니다.</p>
                 </div>
-                <div class="col-3">
-                  <div class="item">
-                    <div class="m_mockup">
-                      <div class="mock_inner">
-                        <div class="m1">
-                          <img src="../img/02_proj/01.festa/04.svg" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <span>버튼으로 탑승확인</span>
+              </div>
+            </div>
+            <div class="mockup mockup_m">
+              <div class="item empty">
+              </div>
+              <div class="item">
+                  <div class="mockup-img">
+                      <img src="../img/02_proj/01.festa/01.jpg" alt="예약하기">
                   </div>
-                  <div class="item">
-                    <div class="m_mockup">
-                      <div class="mock_inner">
-                        <div class="m2">
-                          <img src="../img/02_proj/01.festa/05.svg" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <span>QR코드로 탑승확인</span>
+                  <div class="caption">예약하기</div>
+              </div>
+              <div class="item">
+                  <div class="mockup-img top">
+                      <img src="../img/02_proj/01.festa/02.jpg" alt="좌석선택">
                   </div>
+                  <div class="caption">좌석선택</div>
+              </div>
+            </div>
+            <div class="mockup mockup_m col-3">
+              <div class="item">
+                <div class="mockup-img">
+                  <img src="../img/02_proj/01.festa/03.jpg" alt="인증하기">
                 </div>
+                  <div class="caption">인증하기</div>
+              </div>
+              <div class="item">
+                  <div class="mockup-img">
+                      <img src="../img/02_proj/01.festa/04.jpg" alt="결제하기">
+                  </div>
+                  <div class="caption">결제하기</div>
+              </div>
+              <div class="item">
+                  <div class="mockup-img">
+                      <img src="../img/02_proj/01.festa/05.jpg" alt="예약완료">
+                  </div>
+                  <div class="caption">예약완료</div>
               </div>
             </div>
           </div>
@@ -168,4 +198,18 @@
           </div>
     </section>
 </body>
+<script>
+  //스크롤이벤트
+  window.addEventListener('scroll', () => {
+        var currentY = window.scrollY;
+    var elem = document.getElementById('scroll-event');
+    var clientRectBg = elem.getBoundingClientRect();
+    var abTop = clientRectBg.top + currentY - 300;
+    if(currentY > abTop){
+        document.getElementById('detail').classList.add("active");
+    }else {
+        document.getElementById('detail').classList.remove("active");
+    }
+  })
+</script>
 </html>
