@@ -15,6 +15,8 @@ function scrollEvent(elem){
 }
 
 //닫기
-document.getElementById('close').addEventListener('click', (e) => {
-    window.history.back();
-})
+function close(elem){
+    document.getElementById(elem).addEventListener('click', (e) => {
+        window.history.back();
+    })
+}
