@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festa Shuttle Bus App Standardization</title>
     <link rel="stylesheet" href="../css/detail.css">
+    <script type="text/javascript" src="../js/detail.js"></script>
     <script type="text/javascript" src="../js/slide.js"></script>
 </head>
 <style>
@@ -198,28 +199,6 @@
     </section>
 </body>
 <script>
-  //스크롤이벤트
-  window.addEventListener('scroll', () => {
-        var currentY = window.scrollY;
-    var elem = document.getElementById('scroll-event');
-    var clientRectBg = elem.getBoundingClientRect();
-    var abTop = clientRectBg.top + currentY - 300;
-    if(currentY > abTop){
-        document.getElementById('detail').classList.add("active");
-    }else {
-        document.getElementById('detail').classList.remove("active");
-    }
-  })
-
-  //닫기
- document.getElementById('close').addEventListener('click', (e) => {
-    window.history.back();
-  })
-
-  //리사이즈
-  window.onresize = function() {
-        reviewHeightControl();
-        mainImageControl();
-  }
+  scrollEvent('scroll-event');
 </script>
 </html>
