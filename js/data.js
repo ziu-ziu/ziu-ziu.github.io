@@ -154,7 +154,7 @@ window.onload = function(){
     }
 
     //home화면에서 workitem 중 main 클래스 있는거만 남기기
-    const target = document.querySelectorAll('.workitem');
+    const target = document.querySelectorAll('.main .workitem');
     target.forEach(function(target){
         if(!target.classList.contains('main')){
             target.remove();
