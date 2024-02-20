@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiRi Mobile App Renewal</title>
     <link rel="stylesheet" href="../css/detail.css">
+    <script type="text/javascript" src="../js/detail.js"></script>
 </head>
 <style>
     #detail {background: #154733; transition: all 0.3s ease-in-out;}
@@ -128,7 +129,7 @@
         <!--solution-->
         <div class="sec solution" id="scroll-event">
             <div class="tit">
-                <em>User Review</em>
+                <em>Solution</em>
                 <h3>노선 검색부터 결제까지<br>
                     전반적인 사용성 개선</h3>
             </div>
@@ -223,23 +224,8 @@
     </section>
 </body>
 <script>
-    //닫기
-    document.getElementById('close').addEventListener('click', (e) => {
-        window.history.back();
-    })
-    
-    //스크롤이벤트
-    window.addEventListener('scroll', () => {
-            var currentY = window.scrollY;
-        var elem = document.getElementById('scroll-event');
-        var clientRectBg = elem.getBoundingClientRect();
-        var abTop = clientRectBg.top + currentY - 100;
-        if(currentY > abTop){
-            document.getElementById('detail').classList.add("active");
-        }else {
-            document.getElementById('detail').classList.remove("active");
-        }
-    })
+    close('close');
+    scrollEvent('scroll-event');
 
     //user review 영역 높이 조절
     function reviewHeightControl(){
@@ -249,17 +235,6 @@
             document.querySelector('.review').style.height = Number(imgH) + 'px';
         }
     }
-    //info이동
-    // function infoMove(){
-    //     const infoElem = document.querySelector('.info-wrap');
-    //     const targetElem = document.querySelector('.overview');
-    //     const originElem = document.querySelector('.intro')
-    //     if (matchMedia("screen and (max-width: 914px)").matches) {
-    //         targetElem.prepend(infoElem)
-    //     } else {
-    //         originElem.append(infoElem)
-    //     }
-    // }
 
     //메인 디바이스, 어워드 이미지 사이즈 변경
     function mainImageControl(){
